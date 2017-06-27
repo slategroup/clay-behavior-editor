@@ -31,7 +31,7 @@
     <section class="behavior-zone">
       <div class="kiln-container">
         <behavior
-          name="whatever"
+          name="property"
           :data="componentData"
           schema="dontknowwhattodohere"
           :args="args"
@@ -81,7 +81,7 @@ export default {
     return {
       err: '',
       argsYaml,
-      componentData: this.$store.state.data
+      componentData: this.$store.state.ui.currentForm.property
     }
   },
   methods: {
